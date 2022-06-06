@@ -1,0 +1,42 @@
+:root {
+  --primary: #e4e6f8;
+  --primary-dark: #7b61ff;
+  --orange: #ff9900;
+  --dark-text: #515151;
+  --light-text: #636363;
+  --grey: #e6e6e6;
+  --secondary: #ffffff;
+  --primary-font: "Sarabun";
+  --secondary-font: "Sarala";
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--light-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
