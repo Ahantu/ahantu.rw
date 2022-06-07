@@ -2,10 +2,10 @@
 ## Getting Started
 
 ## Todo 
-- [] Error boundary 
-- [] Error hsndling when user blocks location
-- [] tooltip for use location button on deskstop 
-- [] update new logo
+- [ ] Error boundary 
+- [ ] Error hsndling when user blocks location
+- [ ] tooltip for use location button on deskstop 
+- [ ] update new logo
 
 First, run the development server:
 
