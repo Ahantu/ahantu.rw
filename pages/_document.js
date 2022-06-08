@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_LNWaVoRxkYafsvYgKewbJXY1ElP0Vs&libraries=places"/>
+        <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_LNWaVoRxkYafsvYgKewbJXY1ElP0Vs&libraries=places" strategy='beforeInteractive'/>
       </Html>
     )
   }
