@@ -39,6 +39,10 @@
   margin: 1rem;
 }
 
+.navbar li a {
+  display: flex;
+}
+
 .logo {
   max-width: 1.911rem;
   max-height: 2.375rem;

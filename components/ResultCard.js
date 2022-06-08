@@ -9,12 +9,12 @@ const Card = ({data, t}) => {
         <>
         <div className={styles['card-heading']}>
             <span>{t.resultsText}</span>
-           <button>
+           {/* <button>
            <i>
                 <FontAwesomeIcon icon={faCloudArrowDown}/>
             </i>
             {t.saveIconText}
-           </button>
+           </button> */}
            <CopyToClipboard text={`${data.province}, ${data.district}, ${data.sector}, ${data.cell}, ${data.village}`}>
            <button>
            <i>

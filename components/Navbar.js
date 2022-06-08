@@ -10,8 +10,8 @@ const Navbar = ({onChangeLanguage, t, locale}) => {
                 <ul>
                     <li>
                         <a>
-                        <img src="/logo.svg" className={styles.logo} width={100} height={100} alt="logo"></img>
-                        <img src="/logo-text.svg"></img>
+                        <img src="/logo.svg" className={styles.logo} alt="logo"></img>
+                        <img src="/logo-text.svg" ></img>
                         </a>
                     </li>
                     <li>
