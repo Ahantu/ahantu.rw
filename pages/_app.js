@@ -1,3 +1,5 @@
+import usePlacesAutocomplete from "use-places-autocomplete";
+
 import '../styles/globals.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { ToastContainer, Slide } from 'react-toastify';

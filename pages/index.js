@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { Fragment } from 'react'
 import { useRouter } from "next/router"
+import usePlacesAutocomplete from "use-places-autocomplete";
+
 
 import InactiveLogo from '../components/InactiveLogo'
 import Navbar from '../components/Navbar'
