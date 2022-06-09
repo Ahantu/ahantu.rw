@@ -10,14 +10,14 @@ class MyDocument extends Document {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300;400;500;700&family=Sarala:wght@700&display=swap" rel="stylesheet"/>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_LNWaVoRxkYafsvYgKewbJXY1ElP0Vs&libraries=places&callback=initMap"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_LNWaVoRxkYafsvYgKewbJXY1ElP0Vs&libraries=places"></script>
         {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_LNWaVoRxkYafsvYgKewbJXY1ElP0Vs&libraries=places&callback=initMap"></script> */}
         </Head>
         <body>
           <Main />
           <NextScript />
+          <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_LNWaVoRxkYafsvYgKewbJXY1ElP0Vs&libraries=places" strategy='beforeInteractive'/>
         </body>
-        {/* <Script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_LNWaVoRxkYafsvYgKewbJXY1ElP0Vs&libraries=places&callback=initMap" strategy='beforeInteractive'/> */}
       </Html>
     )
   }
