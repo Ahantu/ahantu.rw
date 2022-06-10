@@ -6,4 +6,4 @@ const Error = () => {
     )
 }
 
-export default Errors
+export default Error
