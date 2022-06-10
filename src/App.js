@@ -27,7 +27,6 @@ import rw from './lang/rw'
 
 export default function App() {
 
-  // const locale = useIntl().locale
 
   const translation = en
   const [inactiveLogo, setInactiveLogo] = useState(true)
