@@ -6,7 +6,8 @@ import usePlacesAutocomplete, {
     getGeocode,
     getLatLng,
   } from "use-places-autocomplete";
-import {toast } from 'react-toastify';
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 import Spinner from './Spinner';
 
@@ -92,10 +93,7 @@ const Input = ({onInputFocus, onInputBlur, onAdminDataRecieved, t}) => {
     }
   
     const onBlockLocation = (error) => {
-      console.log('location blocked')
-      toast("Wow so easy!");
-      
-
+      toast.error(t.locationError)
     }
   
   
@@ -106,6 +104,11 @@ const Input = ({onInputFocus, onInputBlur, onAdminDataRecieved, t}) => {
 
     return (
         <section className={styles['input-container']} ref={ref}>
+          <ToastContainer 
+          position='top-center'
+          hideProgressBar={true}
+
+          />
           <button onClick={handleSubmit}>
                 <i>
                 <FontAwesomeIcon icon={faLocation}/>

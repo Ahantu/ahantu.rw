@@ -13,7 +13,6 @@ import ResultCard from './components/ResultCard'
 import './styles/globals.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { ToastContainer, Slide } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 

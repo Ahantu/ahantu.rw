@@ -16,7 +16,8 @@ const EN  = {
   province:'Province',
   english:'English',
   french:'French',
-  kinyarwanda:'Kinyarwanda'
+  kinyarwanda:'Kinyarwanda',
+  locationError:'You need to allow your location for this feature to work'
 }
 
 export default EN
