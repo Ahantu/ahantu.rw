@@ -8,6 +8,10 @@
   --secondary: #ffffff;
   --primary-font: "Sarabun";
   --secondary-font: "Sarala";
+  /* --toastify-color-error: #d64545; */
+  /* --toastify-icon-color-warning: ; */
+  /* --toastify-color-light: #d64545;
+  --toastify-toast-background: #d64545; */
 }
 
 html,

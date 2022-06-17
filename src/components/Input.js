@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLocation, faLocationDot, faSearch, faClose} from "@fortawesome/free-solid-svg-icons";
+import {faLocation, faLocationDot, faClose} from "@fortawesome/free-solid-svg-icons";
 import useOnclickOutside from "react-cool-onclickoutside";
 import usePlacesAutocomplete, {
     getGeocode,
@@ -16,12 +16,20 @@ import { getadminBoundaryFromCoordinates } from "../api";
 
 
 
-
+const CloseButton = ({closeToast}) => {
+  return (
+    <button className={styles['close-button']}>
+      <i>
+        <FontAwesomeIcon icon={faClose}/>
+      </i>
+    </button>
+  )
+}
  
 const Input = ({onInputFocus, onInputBlur, onAdminDataRecieved, t}) => {
-    const [validBrowser, setValidBroser] = useState(true)
-    const [locationError, setLocationError] = useState(false)
-    const [locationErrorMessage, setLocationErrorMessage] = useState("")
+    // const [validBrowser, setValidBroser] = useState(true)
+    // const [locationError, setLocationError] = useState(false)
+    // const [locationErrorMessage, setLocationErrorMessage] = useState("")
     const [loadingResults, setloadingResults] = useState(false)
 
     const {
@@ -60,6 +68,7 @@ const Input = ({onInputFocus, onInputBlur, onAdminDataRecieved, t}) => {
             })
             .catch((error) => {
               console.log("😱 Error: ", error);
+              toast.error(error.message)
             });
         };
   
@@ -107,7 +116,8 @@ const Input = ({onInputFocus, onInputBlur, onAdminDataRecieved, t}) => {
           <ToastContainer 
           position='top-center'
           hideProgressBar={true}
-
+          theme={"colored"}
+          closeButton={false}
           />
           <button onClick={handleSubmit}>
                 <i>

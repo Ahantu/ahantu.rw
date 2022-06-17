@@ -390,6 +390,18 @@
   padding: 0;
 }
 
+/*error component and toast*/
+.close-button {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  border-color: transparent;
+}
+
+.close-button i {
+  text-align: center;
+}
 /*media queries*/
 /*small screns*/
 
